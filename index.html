@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+</head>
+<body>
+    <h1>CRUD приложение</h1>
+
+    <form id="create-form">
+        <input type="text" id="slug" placeholder="Введите slug" required />
+        <input type="text" id="title" placeholder="Введите title" required />
+        <input type="text" id="content" placeholder="Введите content" required />
+        <input type="text" id="status" placeholder="Введите status" required />
+        <input type="text" id="category" placeholder="Введите category" required />
+
+        <button type="submit">Добавить</button>
+    </form>
+
+    <h2>Список элементов</h2>
+    <table id="data-table" border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Slug</th>
+                <th>Title</th>
+                <th>Content</th>
+                <th>Status</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
